@@ -15,8 +15,8 @@ defmodule SillyWorker do
     # do some work
     # ...
     # ...
-		require Logger
-		Logger.log(:info, "Job Done")
+    require Logger
+    Logger.log(:info, "Job Done")
     :ok
   end
 end
