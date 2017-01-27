@@ -10,8 +10,8 @@ defmodule SillyWorker.Application do
 
     children = [
       worker(SillyWorker.CronJob, [SillyWorker, :do_work, [], 1000]),
-                                          # run the `do_work` method on `SillyWorker`
-                                          # every second with no arguments
+                                   # run the `do_work` method on `SillyWorker`
+                                   # every second with no arguments
     ]
 
     opts = [strategy: :one_for_one, name: SillyWorker.Supervisor]
